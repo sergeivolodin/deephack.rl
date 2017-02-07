@@ -7,7 +7,7 @@ import sys, gym
 # Test yourself as a learning agent! Pass environment name as a command-line argument.
 #
 
-env = gym.make('Skiing-v0')
+env = gym.make('MsPacman-v0')
 ACTIONS = env.action_space.n
 human_agent_action = 0
 
@@ -30,12 +30,13 @@ env.viewer.window.on_key_press = key_press
 env.viewer.window.on_key_release = key_release
 
 obser = env.reset()
+rr = 0
 while(True):
     a = human_agent_action
 
     obser, r, done, info = env.step(a)
-    print("action was {0} reward is {1} done {2}".format(human_agent_action, r, done))
-    print(info)
+    rr += r
+    print("action was {0} reward is {1} done {2} rr {3} {4}".format(human_agent_action, r, done, rr, info))
     env.render()
     if done:
         time.sleep(333)
