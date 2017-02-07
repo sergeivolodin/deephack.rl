@@ -1,0 +1,5 @@
+fc-*.config
+*.svg
+*.gv
+*.swp
+neat-checkpoint-*
