@@ -1,3 +1,5 @@
+odf-*
+data
 *.tar.gz
 *.tgz
 fc-*.config
