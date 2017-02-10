@@ -22,16 +22,21 @@ def get_winner(p):
             max_fitness = genome.fitness
             winner = genome
     print(max_fitness)
-    return(winner)
+    return([max_fitness, winner])
+
+mf = -999999999
 
 for x in range(100):
-    global winner
     try:
         fn = dire + 'neat-checkpoint-' + str(x)
         p = neat.Checkpointer.restore_checkpoint(fn)
         print(fn)
-        winner = get_winner(p)
+        [mf_, winner_] = get_winner(p)
+        if mf_ > mf:
+            mf = mf_
+            winner = winner_
     except:
         pass
 
+print("Max score: {}".format(mf))
 visualize.draw_net(config, winner, False)
