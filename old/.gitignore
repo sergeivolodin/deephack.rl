@@ -1,0 +1,6 @@
+*.txt
+*.tar.gz
+*.tgz
+fc-*.config
+odf*
+data*
