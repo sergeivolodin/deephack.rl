@@ -32,7 +32,14 @@ inp -> conv -> encoded -> deconv -> out
 
 Code:
 1. collect/ -- Autoencoder training & weights:
-2. neat_python -- Neuroevolution using python-neat library
+gym-collect.ipynb -- autoencoder supervised training & saving results
+*.pkl -- saved weights
+2. neat_python/ -- Neuroevolution using python-neat library
+Evolution.ipynb -- open autoencoder, train neuroevolution, send code to OpenAI
+fc.config -- configuration file for NEAT
+visualize.py -- used for plotting the resulting FC network
+3. old -- old stuff
+4. keyboard_agent.py -- human agent (used for debugging)
 
 Additionally, autoencoder receives not the raw observation, but a frame which roughly follows the idea of "Motion vectors" in video estimation [6]:
 
