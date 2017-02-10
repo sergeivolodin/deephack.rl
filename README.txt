@@ -35,7 +35,7 @@ Code:
 gym-collect.ipynb -- autoencoder supervised training & saving results
 *.pkl -- saved weights
 2. neat_python/ -- Neuroevolution using python-neat library
-Evolution.ipynb -- open autoencoder, train neuroevolution, send code to OpenAI
+Evolution.ipynb -- open autoencoder, train neuroevolution, send results to OpenAI
 fc.config -- configuration file for NEAT
 visualize.py -- used for plotting the resulting FC network
 3. old -- old stuff
