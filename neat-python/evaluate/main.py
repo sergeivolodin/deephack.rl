@@ -20,9 +20,9 @@ def get_winner(p):
         genome = p.population[v]
         if genome.fitness > max_fitness:
             max_fitness = genome.fitness
-            winner = genome
+            best_genome = genome
     print(max_fitness)
-    return([max_fitness, winner])
+    return [max_fitness, best_genome]
 
 mf = -999999999
 
